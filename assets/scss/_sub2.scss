@@ -1,3 +1,10 @@
+.service-info,
+.service-board {
+    max-width: 1340px;
+    padding: 100px 30px;
+}
+
+
 .service-info {
     padding-bottom: 0;
     h2 {
@@ -73,6 +80,9 @@
         .service-number {
             padding: 40px 60px;
 
+            .number-box {
+                white-space: nowrap;
+            }
             > p {
                 margin-bottom: 5px;
                 font-size: 24px;
@@ -101,7 +111,7 @@
         .service-box {
             .service-box-wrap {
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
                 column-gap: 26px;
                 padding: 40px 60px;
                 width: 100%;
@@ -214,15 +224,18 @@
             display: none;
         }
     }
+    .btn-open {
+        display: none;
+    }
 }
 
 
-@media screen and (max-width: $bp-tablet) {
+@media screen and (max-width: 1300px) {
+    h2 {
+        font-size: 40px;
+    }
     .service-info {
         padding-top: 50px;
-        h2 {
-            font-size: 40px;
-        }
         .search-wrap {
             h3 {
                 padding-bottom: 20px;
@@ -248,7 +261,7 @@
             }
             .service-number{
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
                 align-items: center;
                 padding: 40px 40px;
                 width: 100%;
@@ -257,8 +270,6 @@
                     font-size: 24px;
                     font-weight: bold;        
                 }
-
-                > p,
                 .number-box {
                     height: 50%;
                 }
@@ -271,7 +282,7 @@
                 }
             }
             .service-span2 {
-                width: 768px;
+                width: 1200px;
                 height: 1px;
             }
             .service-box {
@@ -285,12 +296,16 @@
         }
     }
 }
-@media screen and (max-width: $bp-mobile) {
+@media screen and (max-width: 700px) {
+    .titlearea,
     .service-info {
         position: relative;
-        margin-top: 60px;
         padding: 0;
 
+        h2,
+        h3 {
+            display: none;
+        }
         .search-wrap {
             margin: 0;
             padding: 0 0 70px;
@@ -305,6 +320,9 @@
             }
             input {
                 font-size: 14px;
+            }
+            .search-word {
+                display: none;
             }
         }
         .service-btn-wrap {
@@ -345,6 +363,10 @@
             background-color: $w;
             box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.041);
             
+            .service-number,
+            .service-span2 {
+                display: none;
+            }
             .service-box {
                 .service-box-wrap {
                 justify-content: space-between;
@@ -403,6 +425,7 @@
             width: 10px;
         }
         .btn-open {
+            display: block;
             margin-top: 10px;
             padding: 15px 0;
             width: 100%;
@@ -412,4 +435,9 @@
             border-radius: 5px;
         }
     }
+}
+@media screen and (max-width: $bp-mobile) {
+    .service-info{
+        margin-top: 60px;
+    }    
 }

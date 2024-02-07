@@ -1962,6 +1962,7 @@ h3 {
   background-image: url(../../images/sub1/infopage1.png);
 }
 .info-page1 .info-int1 {
+  font-family: "BMJUA";
   font-size: 60px;
 }
 
@@ -1980,6 +1981,7 @@ h3 {
   overflow: hidden;
 }
 .info-what p {
+  font-family: "BMJUA";
   font-size: 100px;
   font-weight: bold;
   text-align: center;
@@ -2570,6 +2572,12 @@ h3 {
     font-size: 16px;
   }
 }
+.service-info,
+.service-board {
+  max-width: 1340px;
+  padding: 100px 30px;
+}
+
 .service-info {
   padding-bottom: 0;
 }
@@ -2644,6 +2652,9 @@ h3 {
 .service-info .service-wrap .service-number {
   padding: 40px 60px;
 }
+.service-info .service-wrap .service-number .number-box {
+  white-space: nowrap;
+}
 .service-info .service-wrap .service-number > p {
   margin-bottom: 5px;
   font-size: 24px;
@@ -2669,7 +2680,7 @@ h3 {
 }
 .service-info .service-wrap .service-box .service-box-wrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   -moz-column-gap: 26px;
        column-gap: 26px;
   padding: 40px 60px;
@@ -2775,13 +2786,16 @@ h3 {
 .service-board .notice-board .down-icon {
   display: none;
 }
+.service-board .btn-open {
+  display: none;
+}
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1300px) {
+  h2 {
+    font-size: 40px;
+  }
   .service-info {
     padding-top: 50px;
-  }
-  .service-info h2 {
-    font-size: 40px;
   }
   .service-info .search-wrap h3 {
     padding-bottom: 20px;
@@ -2804,7 +2818,7 @@ h3 {
   }
   .service-info .service-wrap .service-number {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 40px 40px;
     width: 100%;
@@ -2813,7 +2827,6 @@ h3 {
     font-size: 24px;
     font-weight: bold;
   }
-  .service-info .service-wrap .service-number > p,
   .service-info .service-wrap .service-number .number-box {
     height: 50%;
   }
@@ -2825,7 +2838,7 @@ h3 {
     margin-top: 0;
   }
   .service-info .service-wrap .service-span2 {
-    width: 768px;
+    width: 1200px;
     height: 1px;
   }
   .service-info .service-wrap .service-box {
@@ -2836,38 +2849,55 @@ h3 {
     height: 130px;
   }
 }
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 700px) {
+  .titlearea,
   .service-info {
     position: relative;
-    margin-top: 60px;
     padding: 0;
   }
+  .titlearea h2,
+  .titlearea h3,
+  .service-info h2,
+  .service-info h3 {
+    display: none;
+  }
+  .titlearea .search-wrap,
   .service-info .search-wrap {
     margin: 0;
     padding: 0 0 70px;
     border-radius: 0;
   }
+  .titlearea .search-wrap .search-form,
   .service-info .search-wrap .search-form {
     padding: 0 16px;
     width: 100%;
   }
+  .titlearea .search-wrap .icon-search,
   .service-info .search-wrap .icon-search {
     right: 33px;
   }
+  .titlearea .search-wrap input,
   .service-info .search-wrap input {
     font-size: 14px;
   }
+  .titlearea .search-wrap .search-word,
+  .service-info .search-wrap .search-word {
+    display: none;
+  }
+  .titlearea .service-btn-wrap,
   .service-info .service-btn-wrap {
     display: flex;
     justify-content: space-between;
     padding: 20px 40px;
     width: 100%;
   }
+  .titlearea .service-btn-wrap .service-btn,
   .service-info .service-btn-wrap .service-btn {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+  .titlearea .service-btn-wrap .bg-circle,
   .service-info .service-btn-wrap .bg-circle {
     display: flex;
     justify-content: center;
@@ -2878,9 +2908,11 @@ h3 {
     border-radius: 100px;
     background-color: #fff;
   }
+  .titlearea .service-btn-wrap p,
   .service-info .service-btn-wrap p {
     text-align: center;
   }
+  .titlearea .service-wrap,
   .service-info .service-wrap {
     position: absolute;
     top: 210px;
@@ -2894,6 +2926,13 @@ h3 {
     background-color: #fff;
     box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.041);
   }
+  .titlearea .service-wrap .service-number,
+  .titlearea .service-wrap .service-span2,
+  .service-info .service-wrap .service-number,
+  .service-info .service-wrap .service-span2 {
+    display: none;
+  }
+  .titlearea .service-wrap .service-box .service-box-wrap,
   .service-info .service-wrap .service-box .service-box-wrap {
     justify-content: space-between;
     padding: 0;
@@ -2901,20 +2940,24 @@ h3 {
          column-gap: 0;
     width: 100%;
   }
+  .titlearea .service-wrap .service-box .infocircle,
   .service-info .service-wrap .service-box .infocircle {
     margin: 0;
     width: 32px;
     height: 32px;
     background-color: transparent;
   }
+  .titlearea .service-wrap .service-box img,
   .service-info .service-wrap .service-box img {
     width: 100%;
   }
+  .titlearea .service-wrap .service-box p,
   .service-info .service-wrap .service-box p {
     padding-top: 10px;
     font-size: 12px;
     font-weight: normal;
   }
+  .titlearea .service-wrap .service-box span,
   .service-info .service-wrap .service-box span {
     height: 50px;
   }
@@ -2946,6 +2989,7 @@ h3 {
     width: 10px;
   }
   .service-board .btn-open {
+    display: block;
     margin-top: 10px;
     padding: 15px 0;
     width: 100%;
@@ -2953,5 +2997,10 @@ h3 {
     text-align: center;
     border: 1px solid #E2E2E2;
     border-radius: 5px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .service-info {
+    margin-top: 60px;
   }
 }/*# sourceMappingURL=comm.css.map */
