@@ -87,42 +87,42 @@ h2{
       border-radius: 20px;
       border: 1px solid $line;
       &.bnr01{
-        background: url(/images/main/main-bnr01.jpg) center center / cover;
+        background: url(../../imagess/main/main-bnr01.jpg) center center / cover;
       }
       &.bnr02{
-        background: url(/images/main/main-bnr02.jpg) center center / cover;
+        background: url(../../imagess/main/main-bnr02.jpg) center center / cover;
       }
       &.bnr03{
-        background: url(/images/main/main-bnr03.jpg) center center / cover;
+        background: url(../../imagess/main/main-bnr03.jpg) center center / cover;
       }
       &.bnr04{
-        background: url(/images/main/main-bnr04.jpg) center center / cover;
+        background: url(../../imagess/main/main-bnr04.jpg) center center / cover;
       }
       &.bnr05{
-        background: url(/images/main/main-bnr05.jpg) center center / cover;
+        background: url(../../imagess/main/main-bnr05.jpg) center center / cover;
       }
       @media screen and (max-width: $bp-tablet) {
         &.bnr01{
-          background: url(/images/main/main-bnr01-t.jpg) center center / cover;
+          background: url(../../imagess/main/main-bnr01-t.jpg) center center / cover;
         }
       }
       @media screen and (max-width: $bp-mobile) {
         border-radius: 0;
         border: none;
         &.bnr01{
-          background: url(/images/main/main-bnr01-m.jpg) center center / cover;
+          background: url(../../imagess/main/main-bnr01-m.jpg) center center / cover;
         }
         &.bnr02{
-          background: url(/images/main/main-bnr02-m.jpg) center center / cover;
+          background: url(../../imagess/main/main-bnr02-m.jpg) center center / cover;
         }
         &.bnr03{
-          background: url(/images/main/main-bnr03-m.jpg) center center / cover;
+          background: url(../../imagess/main/main-bnr03-m.jpg) center center / cover;
         }
         &.bnr04{
-          background: url(/images/main/main-bnr04-m.jpg) center center / cover;
+          background: url(../../imagess/main/main-bnr04-m.jpg) center center / cover;
         }
         &.bnr05{
-          background: url(/images/main/main-bnr05-m.jpg) center center / cover;
+          background: url(../../imagess/main/main-bnr05-m.jpg) center center / cover;
         }
       }
     }
@@ -197,19 +197,19 @@ h2{
           width: 25px;
           height: 25px;
           &.vegi{
-            background: url(/images/comm/icon-ctr1.png) center center / cover;
+            background: url(../../imagess/comm/icon-ctr1.png) center center / cover;
           }
           &.meat{
-            background: url(/images/comm/icon-ctr5.png) center center / cover;
+            background: url(../../imagess/comm/icon-ctr5.png) center center / cover;
           }
           &.fish{
-            background: url(/images/comm/icon-ctr2.png) center center / cover;
+            background: url(../../imagess/comm/icon-ctr2.png) center center / cover;
           }
           &.processed{
-            background: url(/images/comm/icon-ctr4.png) center center / cover;
+            background: url(../../imagess/comm/icon-ctr4.png) center center / cover;
           }
           &.present{
-            background: url(/images/comm/icon-ctr6.png) center center / cover;
+            background: url(../../imagess/comm/icon-ctr6.png) center center / cover;
           }
         }
       }
@@ -902,16 +902,16 @@ h2{
       margin-bottom: 10px;
       border-radius: 5px;
       &.meat{
-        background: url(/images/main/review-01.jpg) center center / cover;
+        background: url(../../imagess/main/review-01.jpg) center center / cover;
       }
       &.straw{
-        background: url(/images/main/review-02.jpg) center center / cover;
+        background: url(../../imagess/main/review-02.jpg) center center / cover;
       }
       &.carrot{
-        background: url(/images/main/review-03.jpg) center center / cover;
+        background: url(../../imagess/main/review-03.jpg) center center / cover;
       }
       &.noodle{
-        background: url(/images/main/review-04.jpg) center center / cover;
+        background: url(../../imagess/main/review-04.jpg) center center / cover;
       }
     }
     .star{
@@ -939,16 +939,16 @@ h2{
         height: 40px;
         border-radius: 5px;
         &.meat{
-          background: url(/images/main/best-meat01.jpg) center center / cover;
+          background: url(../../imagess/main/best-meat01.jpg) center center / cover;
         }
         &.straw{
-          background: url(/images/main/new-strawberry01.jpg) center center / cover;
+          background: url(../../imagess/main/new-strawberry01.jpg) center center / cover;
         }
         &.carrot{
-          background: url(/images/main/new-carrot01.jpg) center center / cover;
+          background: url(../../imagess/main/new-carrot01.jpg) center center / cover;
         }
         &.noodle{
-          background: url(/images/main/best-processed06.jpg) center center / cover;
+          background: url(../../imagess/main/best-processed06.jpg) center center / cover;
         }
       }
       .product{
